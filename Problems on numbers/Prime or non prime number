@@ -1,0 +1,26 @@
+
+#include <iostream>
+using namespace std;
+int main()
+{
+  int p,s=2; bool ch=0;
+  cin>>p;
+  while(s<p)
+  {
+    if(p%s==0)
+    {
+      ch=1;
+    }
+    s=s+1;
+  }
+  if(ch==0)
+  {
+    cout<<" prime number";
+  }
+  else if(ch==1)
+  {
+    cout<<" non prime number";
+  }
+  return 0;
+}
+  
